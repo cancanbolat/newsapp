@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.newsapp.NewsDetailsActivity
 import com.example.newsapp.R
 import com.example.newsapp.News
+import kotlinx.android.synthetic.main.activity_news_details.view.descriptionTextView
+import kotlinx.android.synthetic.main.activity_news_details.view.titleTextView
 
 class NewsAdapter(private val context: Context, private val newsList: List<News>) :
     RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
@@ -35,4 +37,3 @@ class NewsAdapter(private val context: Context, private val newsList: List<News>
 
     class NewsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 }
-
